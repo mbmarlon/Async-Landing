@@ -1,7 +1,9 @@
-const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCgwDG1QDajIOuNCeM2TTzPQ&part=snippet%2Cid&order=date&maxResults=50';
+
 
 const content = null || document.getElementById('content');
+//Youtube options
 
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCgwDG1QDajIOuNCeM2TTzPQ&part=snippet%2Cid&order=date&maxResults=50';
 const options = {
 	method: 'GET',
 	headers: {
@@ -40,3 +42,5 @@ async function fetchData(urlApi) {
     console.log(error);
   }
 })();
+
+
